@@ -2,6 +2,9 @@
  * @NApiVersion 2.x
  * @NScriptType ClientScript
  * @NModuleScope SameAccount
+ * @author Jobin And Jismi IT Services LLP
+ * @Date September 20,2024
+ * @description online form for sales order creation
  */
 define(['N/record', 'N/search', 'N/log'],
     /**
