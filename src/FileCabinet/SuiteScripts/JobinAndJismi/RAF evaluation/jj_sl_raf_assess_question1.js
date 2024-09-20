@@ -28,7 +28,7 @@ define(['N/ui/serverWidget', 'N/search', 'N/record'],
                         title: 'Sales Order Form'
                     });
 
-                    // form.clientScriptModulePath = 'SuiteScripts/JobinAndJismi/RAF evaluation/jj_cs_raf_assess_question1.js';
+                    form.clientScriptModulePath = 'SuiteScripts/JobinAndJismi/RAF evaluation/jj_cs_raf_assess_question1.js';
                     var usergroup = form.addFieldGroup({
                         id: 'usergroup',
                         label: 'User Information'
@@ -211,6 +211,12 @@ define(['N/ui/serverWidget', 'N/search', 'N/record'],
                     log.debug({
                         title: 'Record Created',
                         details: ' Record ID: ' + custRecordId
+                    });
+
+                    var saleRecord = record.create({
+                        type: record.Type.SALES_ORDER,
+                        isDynamic: true,
+
                     });
                 }
             }
